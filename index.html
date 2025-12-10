@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art of Ying Yang - Coming Soon</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #000000;
+            color: #FFFF00;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        .container {
+            text-align: center;
+            width: 90%;
+            max-width: 900px;
+        }
+        
+        .main-title {
+            font-size: clamp(4.5rem, 10vw, 8rem);
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            line-height: 0.9;
+            margin-bottom: 0.5rem;
+            animation: flashyBlink 0.8s infinite alternate;
+        }
+        
+        .art-of {
+            font-size: 0.35em;
+            font-weight: 300;
+            letter-spacing: 0.15em;
+            display: block;
+            margin-bottom: 0.2em;
+            text-transform: uppercase;
+        }
+        
+        .yingyang {
+            font-size: 1em;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            display: block;
+            line-height: 1;
+        }
+        
+        .coming-soon {
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            font-weight: 400;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            margin-top: 2rem;
+            animation: flashyBlink 0.8s infinite alternate;
+        }
+        
+        /* Flashy blinking effect - fixed speed 0.8s */
+        @keyframes flashyBlink {
+            0% {
+                color: #FFFF00;
+                text-shadow: 
+                    0 0 10px #FFFF00,
+                    0 0 20px #FFFF00,
+                    0 0 30px #FFFF00;
+                opacity: 1;
+            }
+            10% {
+                color: #FFD700;
+                text-shadow: 
+                    0 0 7px #FFD700,
+                    0 0 14px #FFD700;
+                opacity: 0.9;
+            }
+            20% {
+                color: #FFFF00;
+                text-shadow: 
+                    0 0 15px #FFFF00,
+                    0 0 30px #FFFF00,
+                    0 0 45px #FFFF00;
+                opacity: 1;
+            }
+            30% {
+                color: #FFA500;
+                text-shadow: 
+                    0 0 5px #FFA500,
+                    0 0 10px #FFA500;
+                opacity: 0.8;
+            }
+            40% {
+                color: #FFFF00;
+                text-shadow: 
+                    0 0 20px #FFFF00,
+                    0 0 40px #FFFF00,
+                    0 0 60px #FFFF00;
+                opacity: 1;
+            }
+            50% {
+                color: #FFFF00;
+                text-shadow: 
+                    0 0 10px #FFFF00,
+                    0 0 20px #FFFF00;
+                opacity: 0.7;
+            }
+            60% {
+                color: #FFEE00;
+                text-shadow: 
+                    0 0 25px #FFEE00,
+                    0 0 50px #FFEE00;
+                opacity: 1;
+            }
+            70% {
+                color: #FFFF00;
+                text-shadow: 
+                    0 0 15px #FFFF00,
+                    0 0 30px #FFFF00;
+                opacity: 0.6;
+            }
+            80% {
+                color: #FFFF00;
+                text-shadow: 
+                    0 0 30px #FFFF00,
+                    0 0 60px #FFFF00,
+                    0 0 90px #FFFF00;
+                opacity: 1;
+            }
+            90% {
+                color: #FFCC00;
+                text-shadow: 
+                    0 0 8px #FFCC00,
+                    0 0 16px #FFCC00;
+                opacity: 0.8;
+            }
+            100% {
+                color: #FFFF00;
+                text-shadow: 
+                    0 0 20px #FFFF00,
+                    0 0 40px #FFFF00;
+                opacity: 1;
+            }
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: clamp(3.5rem, 12vw, 6rem);
+            }
+            
+            .coming-soon {
+                font-size: clamp(1.8rem, 5vw, 2.8rem);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .main-title {
+                font-size: 3rem;
+            }
+            
+            .coming-soon {
+                font-size: 1.8rem;
+                margin-top: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Main content -->
+    <div class="container">
+        <div class="main-title">
+            <span class="yingyang">ART OF</span>
+            <span class="yingyang">YING YANG</span>
+        </div>
+        <div class="coming-soon">COMING SOON</div>
+    </div>
+</body>
+</html>
